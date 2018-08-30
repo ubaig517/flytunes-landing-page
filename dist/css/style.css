@@ -43,6 +43,13 @@ section#entertainment {
   padding: 2.5rem 0;
 }
 
+.gc-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
 /* SHOWCASE STYLES */
 #showcase {
   margin: 0;
@@ -67,6 +74,32 @@ section#entertainment {
   font-size: 2rem;
 }
 
+/* FOTER STYLES */
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer .footer-cols ul {
+  list-style: none;
+}
+
+footer .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+  margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+  background: #333;
+  padding: 1rem;
+}
+
 /* UTILITY CLASSES */
 .container {
   max-width: 1180px;
@@ -85,6 +118,10 @@ section#entertainment {
 
 .mt {
   margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* BUTTON STYLES */
@@ -252,6 +289,16 @@ nav a#openup {
 
 .cf {
   zoom: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .gc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .footer-cols {
+    display: none;
+  }
 }
 
 /* For IE 6/7 (trigger hasLayout) */
